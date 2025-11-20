@@ -1,0 +1,45 @@
+body {
+    width: 850px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    background-color: crimson;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    /* se expande de el inicio al final  */
+    justify-content: space-between;
+    /* se centra verticalmente  */
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    font-size: 16px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #fff;
+}
+
+.nav-links li a:hover {
+    text-shadow: 0 0 7px #ffffff;
+}

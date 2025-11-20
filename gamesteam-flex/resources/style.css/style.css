@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+:root {
+    --color-fondo: #3F4F64;
+    --color-barra: #2D3948;
+    --color-verde: #86B31E;
+    --color-blanco: #FFF;
+    --color-negro: #000;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color-fondo);
+}
+
+/* --- Barra de navegación --- */
+
+.navbar {
+    /* Color de fondo */
+    background-color: var(--color-barra);
+}
+
+.nav-contenedor {
+    /* Largo del contenedor */
+    width: 1000px;
+    /* Altura del contenedor */
+    height: 80px;
+    /* Centrar el contenedor */
+    margin: 0 auto;
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.nav-logo {
+    /* Flexbox */
+    display: flex;
+    align-items: center
+}
+
+.nav-logo img {
+    /* Tamaño de la imagen */
+    width: 60px;
+    /* Espacio exterior derecha */
+    margin-right: 16px;
+}
+
+.nav-logo h1 {
+    /* Color del título del logo */
+    color: var(--color-blanco);
+}
+
+.titulo-verde {
+    /* Color de una parte del título del logo */
+    color: var(--color-verde);
+}
+
+.form-busqueda input {
+    /* Espacio interior (todos los ejes) */
+    padding: 8px 18px;
+    /* Largo de la caja de búsqueda */
+    width: 300px;
+    /* Borde redondeado */
+    border-radius: 8px;
+    /* Sin borde */
+    border: none;
+}
+
+.btn-iniciar-sesion {
+    /* Color de fondo para el botón */
+    background-color: var(--color-verde);
+    /* Color para el contenido del botón */
+    color: var(--color-blanco);
+    /* Sin borde para el botón */
+    border: none;
+    /* Espacio interior (eje y x) */
+    padding: 10px 40px;
+    /* Borde redondeado */
+    border-radius: 8px;
+}
+
+/* --- Cabecera con enlaces --- */
+
+.nav-plataformas {
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--color-verde);
+    /* Flexbox */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-plataformas a {
+    color: var(--color-blanco);
+    text-decoration: none;
+}
