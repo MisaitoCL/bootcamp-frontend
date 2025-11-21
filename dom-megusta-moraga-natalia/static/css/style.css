@@ -1,0 +1,174 @@
+/* Formateamos estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* defino colores */
+:root {
+    --background-color: #FAFAFF;
+    --header-color: #222222;
+    --header-text-color: #fff;
+    --article-color: #f1f1f3;
+    --article-border-color: #acabab;
+    --btn-like-color: #B8F80B;
+    --btn-borde-color: #81af02;
+    --btn-hover-color: #ddff80;
+    --img-border-color: #292929;
+}
+
+/* defino una fuente de google fonts en el body para que lo here toda la página */
+body {
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    /* color de fondo y texto del header */
+    background-color: var(--header-color);
+    color: var(--header-text-color);
+    /* centro el texto, como es solo una etiqueta lo centro con text align */
+    text-align: center;
+    /* espacio interno arriba y abajo para dar una altura a cabecera*/
+    padding: 10px 0;
+}
+
+.container {
+    /* defino contenedor como flex para alinear el perfil y las cajas que van a la derecha  */
+    display: flex;
+    /* doy un padding a todo el contenedor para que el contenido no quede pegado a los bordes  */
+    padding: 30px;
+    /* separación entre las 2 cajas hijas de mi contenedor  */
+    gap: 20px;
+}
+
+/* clase para contenedor de perfil */
+.profile {
+    /* defino un ancho */
+    width: 200px;
+    /* agrego un relleno en el contenedor */
+    padding: 20px;
+    /* borde de la foto de perfil  */
+    border: 2px solid var(--img-border-color);
+    /* alineo texto con el nombre de perfil */
+    text-align: center;
+    /* defino un alto para ajustarlo como el Wireframe de referencia */
+    height: 250px;
+    /* le doy un margen arriba para que quede a la misma altura de las cajas de section */
+    margin-top: 55px;
+}
+
+/* Estilo para la imagen de perfil  */
+.profile img {
+    /* defino el ancho para que use todo el espacio disponible  */
+    width: 100%;
+    /* dejo la foto como circulo  */
+    border-radius: 50%;
+    /* margen inferior para separar texto con nombre */
+    margin-bottom: 30px;
+    /* este es un efecto que encontré para que el hover funciones suavecitooo */
+    transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+    /* doy un efecto en la imagen cuando el cursor este encima, la aumento un 8% sin deformar */
+    transform: scale(1.08);
+}
+
+/* defino algunos tamaños de letra para h2 y h3  */
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.feed {
+    /* defino la clase feed de section como flex 1 para que use todo el contenido restante del contenedor */
+    flex: 1;
+}
+
+.feed h2 {
+    /* doy un espaciado al texto para que el contenido de abajo no este pegado a este  */
+    padding-bottom: 30px;
+}
+
+/* clase del contenedor article, que es cada publicación en recuadros */
+.post {
+    /* color de fondo  */
+    background-color: var(--article-color);
+    /* doy un borde a toda la caja  */
+    border: 1px solid var(--article-border-color);
+    /* agrego un relleno para separar el texto de los contornos  */
+    padding: 15px;
+    /* separo cada caja de article con un margen abajo  */
+    margin-bottom: 20px;
+    /* redondeo bordes de caja  */
+    border-radius: 5px;
+    /* defino caja como flex ya que dididi el contenido en 2 bloques*/
+    display: flex;
+    /* ajusto los bloques a los bordes laterales  */
+    justify-content: space-between;
+}
+ 
+/* clase del primer bloque dentro de article  */
+.post-main {
+    /* defino como flex para ajusta el contenido */
+    display: flex;
+    /* lo dejo como column para que el contenido se distribuya en vertical  */
+    flex-direction: column;
+    /* ajusta el contenido arriba y abajo del contenedor  */
+    justify-content: space-between;
+}
+
+.post-main p {
+    /* defino tamaño del texto  */
+    font-size: 14px;
+    /* doy un margen superior para separar el nombre ya que no le di un alto al contenedor*/
+    margin-top: 20px;
+}
+
+.post-footer p {
+    /* defino el parrafo con el contador de like como en linea para que quede al lado del botón  */
+    display: inline-block;
+    /* ajusto tamaño de fuente  */
+    font-size: 14px;
+}
+
+/* clase del boton like  */
+.btn-like {
+    /* color de fondo del boton  */
+    background-color: var(--btn-like-color);
+    /* borde del boton  */
+    border: 1px solid var(--btn-borde-color);
+    /* le doy un relleno para que no quede ajsutado al texto  */
+    padding: 8px 18px;
+    /* separo el texto de likes del boton con un margen  */
+    margin-left: 10px;
+    /* redondeo bordes  */
+    border-radius: 5px;
+    /* cambio el curso a la manito para indicar que es clickeable */
+    cursor: pointer;
+    /* dejo el texto en negrita  */
+    font-weight: bold;
+    /* efectito para que el cambio de color del hover sea mas suave  */
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio color de boton al poner puntero encima  */
+.btn-like:hover {
+    background-color: var(--btn-hover-color);
+}
+
+/* esta clase agrega una animacion de agrandar el texto, la uso desde js  */
+.pop {
+    animation: pop 0.3s ease;
+}
+
+/* esto le da una duración a la animación  */
+@keyframes pop {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.4); }
+    100% { transform: scale(1); }
+}
