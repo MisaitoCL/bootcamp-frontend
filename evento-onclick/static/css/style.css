@@ -1,0 +1,139 @@
+/* Formateamos estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* defino colores */
+:root {
+    --background-color: #FAFAFF;
+    --header-text-color: #fff;
+    --header-color: #6d7aa7;
+    --btn-sesion-color: #2ff8a4;
+    --btn-sesion-ho-color: #11af6d;
+    --txt-sesion-color: #000000;
+    --header-shadow-color: #131313;
+    --shadow-color: #a7a7a7;
+    --background-box-color: #fbf9ff;
+    --btn-add-color: #b6e8f7;
+    --btn-add-ho-color: #489eb8;
+    --white-text-color: white;
+    --btn-like-color: #fcf8c3;
+    --btn-like-ho-color: #e6dc55;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(---text-color);
+    width: 1000px;
+    /* establezco cajas al centro */
+    margin: 0 auto;
+    /* Flex para organizar header, section y aside */
+    display: flex;
+    /* si superan el tamaño del contenedor continua abajo  */
+    flex-wrap: wrap;
+    /* Distribuyo los elementos en los bordes laterales */
+    justify-content: space-between;
+}
+
+header {
+    margin-bottom: 15px;
+    flex: 0 0 100%;
+    color: var(--header-text-color);
+}
+
+.header-container {
+    background-color: var(--header-color);
+    color: var(--white-color);
+    border-bottom: 5px solid #2ff8a4;
+    /* asigno tamaño a cabecera  */
+    width: 1000px;
+    height: 90px;
+    /* le doy espaciado interno a contenido */
+    padding: 20px;
+    /* Flex  */
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    text-shadow: 1px 1px 2px var(--header-shadow-color);
+}
+
+.header-container>input[type="text"] {
+    width: 500px;
+    height: 25px;
+}
+
+.btn-login {
+    width: 120px;
+    height: 25px;
+    border: 0;
+    background-color: var(--btn-sesion-color);
+    border-radius: 2px;
+    color: var(--txt-sesion-color);
+}
+
+.btn-login:hover {
+    background-color: var(--btn-sesion-ho-color);
+    cursor: pointer;
+    color: var(--header-text-color);
+}
+
+.box-section {
+    width: 600px;
+    box-shadow: 1px 1px 2px var(--shadow-color);
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: var(--background-box-color);
+    border-radius: 5px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+aside {
+    background-color: var(--background-box-color);
+    box-shadow: 1px 1px 2px var(--shadow-color);
+    width: 380px;
+    height: 100px;
+    padding: 15px;
+    /* uso flex en aside para organizar mas facil el texto y caja de texto */
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.btn-add {
+    width: 220px;
+    height: 25px;
+    background-color: var(--btn-add-color);
+    border: 1px solid var(--btn-add-ho-color);
+    box-shadow: 1px 1px 2px var(--header-shadow-color);
+}
+
+.btn-add:hover {
+    background-color: var(--btn-add-ho-color);
+    cursor: pointer;
+    color: var(--white-text-color);
+}
+
+.btn-like {
+    width: 90px;
+    height: 24px;
+    margin-top: 10px;
+    border: 1px solid #373832;
+    background-color: var(--btn-like-color);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px var(--header-shadow-color);
+}
+
+.btn-like:hover {
+    background-color: var(--btn-like-ho-color);
+    cursor: pointer;
+}

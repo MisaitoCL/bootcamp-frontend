@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Autora del documento -->
+    <meta name="author" content="misaito19@gmail.com">
+    <title>Core Evento Onclick - Petlopedia</title>
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- contenedor cabecera  -->
+    <header>
+        <div class="header-container">
+            <h1>Petlopedia</h1>
+            <input type="text" name="busqueda" id="busqueda" placeholder="Buscar mascotas">
+            <button class="btn-login">Iniciar Sesión</button>
+        </div>
+    </header>
+
+    <!-- contenedor bloques izquierda -->
+    <section>
+        <!-- Separo cada bloque en un div que repite información -->
+        <div class="box-section">
+            <h2>Gato Atigrado</h2>
+            <em>Sustantivo</em>
+            <p>Plural: Gatos atigrados</p>
+            <p>Un gato con un pelaje distintivo que presenta rayas, puntos o patrones en remolino, usualmente con una
+                marca en forma de "M" en su frente</p>
+            <button class="btn-like">0 Me gusta</button>
+        </div>
+        <div class="box-section">
+            <h2>Golden Retriever</h2>
+            <em>Sustantivo</em>
+            <p>Plural: Golden Retrievers</p>
+            <p>Una raza de perro amistosa, inteligente y devota, conocida por su pelaje dorado y su habilidad para
+                recuperar objetos sin dañarlos</p>
+            <button class="btn-like">0 Me gusta</button>
+        </div>
+    </section>
+
+    <!-- Contenedor bloque derecha -->
+    <aside>
+        <p>Petlopedia está definida por TI</p>
+        <input type="button" value="Agregar definición" class="btn-add">
+    </aside>
+
+    <!-- Javascripts -->
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
