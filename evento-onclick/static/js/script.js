@@ -2,19 +2,18 @@
 
 // obtengo el botón por su clase css
 let botonLogin = document.querySelector(".btn-login");
-//defino una banderita para cambiar valor por cada click
-let flag = 0;
+
 // se agrega un evento 'click' al botón
 botonLogin.addEventListener("click", function () {
-    // Cambiamos el contenido del botón a cerrar sesión si la variable es 0 para que actue como switch
-    if (flag === 0) {
+    console.log(this.innerText);
+
+    //si el texto es "Iniciar Sesión" lo establezco como cerrar
+    if (this.innerText === "Iniciar Sesión") {
         this.innerText = "Cerrar Sesión";
-        flag = 1;
     }
-    //si la bandera no es 0 volvemos a mostrar iniciar y dejamos la variable en 0
+    //si el texto no es "Iniciar Sesión" lo establezco
     else {
         this.innerText = "Iniciar Sesión";
-        flag = 0;
     }
 
 });
