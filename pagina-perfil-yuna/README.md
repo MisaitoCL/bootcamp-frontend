@@ -29,18 +29,6 @@ Funcionalidades principales:
 
 ---
 
-## 📁 Estructura sugerida del repositorio
-
-```text
-pagina-perfil-yuna/
-├── index.html
-├── styles.css
-├── script.js       # lógica para aceptar solicitudes y editar nombre
-└── screenshots/    # opcional, para las imágenes del README
-```
-
----
-
 ## 🔧 Cómo funciona (resumen técnico)
 
 * El listado de **solicitudes** está representado en el DOM (por ejemplo, una lista `<ul>` con `<li>`s o cards).
