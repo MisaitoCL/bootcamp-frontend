@@ -15,16 +15,6 @@
 
 ---
 
-## 📄 Índice rápido
-- [Sobre el repositorio](#-sobre-este-repositorio)  
-- [Estructura real del repo](#-estructura-real-del-repo)  
-- [Proyectos destacados](#-proyectos-destacados)  
-- [Tecnologías](#-tecnologías)  
-- [Objetivos y próximos pasos](#-objetivos-y-próximos-pasos)  
-- [Autora](#-autora)
-
----
-
 ## 🧩 Sobre este repositorio
 Este repositorio centraliza los ejercicios y miniproyectos realizados durante el bootcamp. Cada carpeta contiene un proyecto independiente con su propio `index.html`, carpeta `css/` y `js/` cuando corresponde.
 
