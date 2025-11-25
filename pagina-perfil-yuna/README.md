@@ -13,8 +13,6 @@ Funcionalidades principales:
 
 ## 🖼️ Capturas
 
-> Crea una carpeta `screenshots/` y añade aquí las capturas reales.
-
 ### Perfil con solicitudes
 
 ![Solicitudes pendientes](./resources/pantalla-principal.jpg)
