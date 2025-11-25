@@ -1,6 +1,6 @@
-# Yootuve -- Vista previa de video
+# Yootuve - Vista previa de video
 
-¡Bienvenido a **Yootuve -- Vista Previa de Video**! 🎥✨\
+¡Bienvenido a **YooTuve - Vista Previa de Video**! 🎥✨\
 Un mini-proyecto frontend que replica la experiencia de YouTube al hacer
 clic en un video lateral, cargándolo automáticamente en el reproductor
 principal.
@@ -59,22 +59,14 @@ yootuve-vista-previa-video/
 
 ## 🔧 Tecnologías utilizadas
 
--   **HTML5** -- Estructura
--   **CSS3** -- Estilos y layout
--   **JavaScript** -- Lógica de cambio de video
-
-------------------------------------------------------------------------
-
-## 🌟 Mejoras futuras (ideas)
-
--   Añadir animaciones al cambiar video.
--   Convertirlo en un pequeño componente reutilizable.
--   Hacer que el listado lateral sea dinámico desde un JSON.
+-   **HTML5** - Estructura
+-   **CSS3** - Estilos y layout
+-   **JavaScript** - Lógica de cambio de video
 
 ------------------------------------------------------------------------
 
 ## 🐱‍👓 Autor
 
-Proyecto creado por **Misaito** --- amante del aerógrafo, el animé y los
-gatos negros.\
+Proyecto creado por **Misaito** - amante del aerógrafo, el animé y los
+gatos.\
 Si te gustó, ¡dale una ⭐ en GitHub!
