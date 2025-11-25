@@ -35,6 +35,7 @@
                 <div class="block-texto">
                     <img src="static/images/yuna.jpg" alt="Foto gato" class="photo">
                     <h1>Yuna Moraga</h1>
+                    <input type="text" name="nombre" id="nombre" hidden >
                     <h3>Santiago, Chile</h3>
                     <h4>Gata Bombay | Especialista en Siestología | Amante de latitas Leonardo</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati omnis qui Lorem
@@ -49,23 +50,27 @@
                 <p>Física aplicada al desorden repentino.</p>
             </div>
             <div class="block-sidebar block-solicitudes">
-                <h2>Solicitudes de Conexión (2)</h2>
+                <h2>Solicitudes de Conexión (<span id="Solicitudes">2</span>)</h2>
                 <div class="sidebar-container">
                     <img src="static/images/profile1.jpg" alt="" class="image-profile">
                     <p>Artemis Moraga</p>
-                    <i class="bi bi-check-circle icon-color"></i>
-                    <i class="bi bi-x-circle icon-color"></i>
+                    <div>
+                        <i class="bi bi-check-circle icon-color-aceptar" role="button"></i>
+                        <i class="bi bi-x-circle icon-color" role="button"></i>
+                    </div>
                 </div>
                 <div class="sidebar-container">
                     <img src="static/images/profile2.jpg" alt="" class="image-profile">
                     <p>Pascuala Urtubia</p>
-                    <i class="bi bi-check-circle icon-color"></i>
-                    <i class="bi bi-x-circle icon-color"></i>
+                      <div>
+                      <i class="bi bi-check-circle icon-color-aceptar" role="button"></i>
+                    <i class="bi bi-x-circle icon-color" role="button"></i>
+                    </div>
                 </div>
             </div>
 
             <div class="block-sidebar block-conexiones">
-                <h2>Tus Conexiones (300+)</h2>
+                <h2>Tus Conexiones (<span id="conexiones">300</span>+)</h2>
                 <div class="sidebar-contactos">
                     <img src="static/images/cat_1.jpg" alt="" class="image-contacto">
                     <p>Akira Toriyama Toriyama</p>

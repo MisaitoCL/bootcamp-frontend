@@ -25,7 +25,10 @@ body {
     font-weight: bold;
     font-style: normal;
 }
-
+.btn-aceptar {
+    width: 60px;
+    height: 60px;
+}
 .container {
     width: 950px;
     background-color: var(--white-color);
@@ -139,6 +142,9 @@ body {
 .block-texto h1 {
     margin-top: 90px;
 }
+.block-texto input {
+    margin-top: 90px;
+}
 
 h1 {
     font-size: 28px;
@@ -193,7 +199,7 @@ p {
 }
 
 .block-solicitudes {
-    height: 180px;
+    min-height: 100px;
 }
 
 .image-profile {
@@ -212,16 +218,20 @@ p {
 }
 
 .block-conexiones {
-    height: 400px;
+    /* height: 400px; */
 }
 
 .icon-color {
     color: var(--icon-color);
+    cursor: pointer;
 }
 
-.icon-color:hover {
-    color: var(--icon-hover-color);
+.icon-color-aceptar {
+    color: #1c9440;
     cursor: pointer;
+}
+.icon-color:hover, .icon-color-aceptar:hover {
+    color: var(--icon-hover-color);
 }
 
 .block-sidebar h2 {
