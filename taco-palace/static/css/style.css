@@ -1,0 +1,290 @@
+/* Formateamos estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Variables globales  */
+:root {
+    --fondo-header-color: #f4f4f4;
+    --borde-tarjetas-color: #cdcccd;
+    --botones-acentos-color: #fe9901;
+    --botones-hover-color: #fe7b01;
+    --negro-color: #000;
+    --fondo-comidas-color: #f9ca9d;
+    --blanco-color: #fff;
+}
+
+body {
+    /* asigno google font a todo el cuerpo  */
+    font-family: "Caveat Brush", cursive;
+}
+
+header {
+    /* le doy un color al fondo de la cabecera  */
+    background-color: var(--fondo-header-color);
+    /* dejo una linea de borde inferior  */
+    border-bottom: 2px solid var(--negro-color);
+    /* ajusto contenido al centro  */
+    margin: 0 auto;
+    /* agrego un espaciado interior en sus 4 lados  */
+    padding: 10px 30px;
+    /* Flex  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* estilo para texto TacoPalace */
+.logo-box>h1 {
+    /* establezco h1 como en línea  */
+    display: inline;
+    /* ajusto el tamaño de la fuente  */
+    font-size: 40px;
+    /* doy un espaciado a la izquierda para separar el logo  */
+    margin-left: 10px;
+}
+
+/* cambio el color de taco  */
+.logo-box>h1>span {
+    color: var(--botones-acentos-color);
+}
+
+/* Establezo un ancho para el span con el numero de carrito de compra, para que cuando aumente a 2 digitos no se agrande */
+.cantidad {
+    width: 15px;
+}
+
+.form-box {
+    /* Flex  */
+    display: flex;
+    /* alineo contenido al extremo derecho  */
+    justify-content: flex-end;
+    /* alineacion vertical  */
+    align-items: center;
+    /* espaciado entre eobjetos  */
+    gap: 20px;
+}
+
+.formulario-login>input {
+    /* establezco fuente ya que no toma la del body  */
+    font-family: "Caveat Brush", cursive;
+    /* doy una espaciado interno izquierdo para separar el contenido del borde */
+    padding-left: 10px;
+    /* agrego un borde a la caja  */
+    border: 2px solid var(--negro-color);
+    /* ancho y alto de la caja  */
+    width: 200px;
+    height: 22px;
+}
+
+.formulario-login>button {
+    /* establezco fuente ya que no toma la del body  */
+    font-family: "Caveat Brush", cursive;
+    /* ancho y alto del boton  */
+    width: 60px;
+    height: 22px;
+    /* imagen de fondo del boton  */
+    background-color: var(--botones-acentos-color);
+    /* agrego un borde al boton  */
+    border: 2px solid var(--negro-color);
+    /* sombra */
+    box-shadow: 2px 2px 0 var(--negro-color);
+    /* cursor con manito  */
+    cursor: pointer;
+}
+
+.formulario-login>button:hover {
+    /* cambio color del boton al poner puntero encima  */
+    background-color: var(--botones-hover-color);
+}
+
+.carrito-box {
+    /* flex  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* espaciado entre objeto */
+    gap: 6px
+}
+
+.carrito-box>img {
+    /* ancho del icono */
+    width: 20px;
+}
+
+/* estilo para la caja nav con los distintos platos de comida  */
+nav {
+    /* defino color de fondo  */
+    background-color: var(--fondo-comidas-color);
+    /* ancho de contenedor  */
+    width: 80%;
+    /* margen arriba y abajo para separar de cabecera */
+    margin: 10px auto;
+    /* doy espaciado interno, el de abajo es menor ya que lleva texto y se veia mayor es espacio */
+    padding: 20px 20px 10px 20px;
+    /* flex  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-nav-menu {
+    /* tamaño de imagenes de comida  */
+    width: 180px;
+}
+
+/* Clase con un efectito para enchular la web con el hover */
+.img-efecto {
+    transition: transform 0.3s ease;
+}
+
+.img-efecto:hover {
+    /* doy un efecto en la imagen cuando el cursor este encima, la aumento un 8% sin deformar */
+    transform: scale(1.08);
+}
+
+/* cajas de comida  */
+.nav-box {
+    /* alineo texto al centro  */
+    text-align: center;
+    /* establezco un color al texto  */
+    color: var(--blanco-color);
+    /* ajusto tamaño de fuente  */
+    font-size: 20px;
+}
+
+.contenedor-inferior {
+    /* estabklezco el ancho a lo mismo que el navbar  */
+    width: 80%;
+    /* lo centro  */
+    margin: 0 auto;
+    /* flex  */
+    display: flex;
+    /* espaciado entre elementos  */
+    gap: 26px;
+}
+
+section {
+    /* color de fondo  */
+    background-color: var(--borde-tarjetas-color);
+    /* espaciado interno en todos sus lados  */
+    padding: 20px;
+    /* flex  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* establezco que el ancho tome 3 partes  */
+    flex: 3;
+    /* ajusto contenido al 100& del alto  */
+    height: 100%;
+}
+
+/* estilo para texto "la mejor variedad..." */
+.texto-box>h3 {
+    /* tamaño de la fuente  */
+    font-size: 40px;
+    /* alineación al centro  */
+    text-align: center;
+    /* espaciado interno arriba y abajo 0 y a los lados 36 */
+    padding: 36px;
+    /* dejo la fuente mas fina  */
+    font-weight: lighter;
+    /* doy un espaciado abajo para separar con el parrafo */
+    margin-bottom: 18px;
+}
+
+.texto-box>h3>strong {
+    /* dejo en negrita el texto strong */
+    font-weight: bold;
+}
+
+/* estilo para texto "contamos con ..." */
+.texto-box>p {
+    /* tamaño de la fuente  */
+    font-size: 20px;
+    /* alineacion horizontal al centro  */
+    text-align: center;
+    /* espaciado interno  */
+    padding: 0 36px;
+    /* dejo la fuente mas fina  */
+    font-weight: lighter;
+}
+
+/* cambio color al texto domicilio  */
+.texto-box>p>strong {
+    color: var(--botones-acentos-color)
+}
+
+/* ancho de la imagen principal  */
+section>img {
+    width: 600px;
+}
+
+aside {
+    /* establezco que el aside tomara una parte */
+    flex: 1;
+}
+
+.aside-box {
+    /* borde de la tarjeta  */
+    border: 1px solid var(--borde-tarjetas-color);
+    /* espaciado arriba y abajo para separar cajas*/
+    margin: 16px 0;
+}
+
+.aside-box>img {
+    /* ajusto el ancho de la imagen al tamaño del contenedor  */
+    width: 100%;
+}
+
+.btn-add {
+    /* color de fondo del boton */
+    background-color: var(--botones-acentos-color);
+    /* color de texto  */
+    color: var(--blanco-color);
+    /* ancho y alto de boton  */
+    width: 22px;
+    height: 22px;
+    /* dejo boton redondo  */
+    border-radius: 50%;
+    /* le quito el border  */
+    border: 0;
+    /* cambio el curso a manito  */
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    /* cambio color de fondo al pasar encima del boton  */
+    background-color: var(--botones-hover-color);
+}
+
+.aside-box-foot {
+    /* espaciado interno de la caja  */
+    padding: 10px;
+    /* flex  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* esta clase agrega una animacion de agrandar el texto al sumar al carrito, la uso desde js  */
+.pop {
+    animation: pop 0.3s ease;
+}
+
+/* esto le da una duración a la animación  */
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

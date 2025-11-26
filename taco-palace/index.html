@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Autora del documento -->
+    <meta name="author" content="misaito19@gmail.com">
+
+    <!-- Titulo de la página  -->
+    <title>TacoPalace - Lo mejor en comida mexicana</title>
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Cabecera  -->
+    <header>
+        <!-- contenedor de logo y marca -->
+        <div class="logo-box">
+            <!-- logo  -->
+            <img src="static/images/logo.png" alt="logo">
+            <!-- nombre de la web  -->
+            <h1><span>Taco</span>Palace</h1>
+        </div>
+
+        <!-- Contenedor de formulario sesion y carrito -->
+        <div class="form-box">
+
+            <!-- Formulario  -->
+            <form action="#" class="formulario-login">
+                <!-- caja de texto de correo  -->
+                <input type="email" name="email" id="email" placeholder="tucorreo@gmail.com">
+                <!-- boton de inicia sesión  -->
+                <button type="button" id="btnLogin">Login</button>
+            </form>
+
+            <!-- contenedor carrito de compra -->
+            <div class="carrito-box">
+                <!-- imagen de carrito de compra  -->
+                <img src="static/images/carrito.png" alt="Carrito" class="img-efecto">
+                <!-- cantidad de articulos en carrito  -->
+                <span class="cantidad">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- barra de navegacion de menu  -->
+    <nav>
+        <!-- caja de navegación 1  -->
+        <div class="nav-box">
+            <img src="static/images/enchiladas.jpg" alt="" class="img-nav-menu img-efecto">
+            <p>Enchiladas</p>
+        </div>
+        <!-- caja de navegación 2  -->
+        <div class="nav-box">
+            <img src="static/images/tacos.jpg" alt="imagen de tacos" class="img-nav-menu img-efecto">
+            <p>Tacos</p>
+        </div>
+        <!-- caja de navegación 3  -->
+        <div class="nav-box">
+            <img src="static/images/flautas.jpg" alt="imagen de flautas" class="img-nav-menu img-efecto">
+            <p>Flautas</p>
+        </div>
+        <!-- caja de navegación 4  -->
+        <div class="nav-box">
+            <img src="static/images/gorditas.jpg" alt="imagen de gorditas" class="img-nav-menu img-efecto">
+            <p>Gorditas</p>
+        </div>
+        <!-- caja de navegación 5  -->
+        <div class="nav-box">
+            <img src="static/images/tostadas.jpg" alt="imagen de tostadas" class="img-nav-menu img-efecto">
+            <p>Tostadas</p>
+        </div>
+        <!-- caja de navegación 6  -->
+        <div class="nav-box">
+            <img src="static/images/enfrijoladas.jpg" alt="imagen de enfrijoladas" class="img-nav-menu img-efecto">
+            <p>Enfrijoladas</p>
+        </div>
+    </nav>
+    <!-- contenedor de section y aside para ubicar estos elementos  -->
+    <div class="contenedor-inferior">
+        <!-- Contenedor principal con banner  -->
+        <section>
+            <div class="texto-box">
+                <!-- textos resaltando con importancia mexicana  -->
+                <h3>La mejor variedad en platillos de comida <strong>mexicana</strong></h3>
+                <!-- parrafo con hipervinculo y enfasis en domicilio -->
+                <p>contamos con <a href="#">servicio</a> a <strong>domicilio</strong>
+                </p>
+            </div>
+            <img src="static/images/comida-mexicana-01.jpg" alt="comida mexicana" id="imagen-principal">
+        </section>
+
+        <!-- contenedor lateral  -->
+        <aside>
+            <h3>Recomendados:</h3>
+
+            <!-- caja lateral 1 -->
+            <div class="aside-box">
+                <img src="static/images/orden-tacos.jpg" alt="orden de tacos">
+
+                <!-- Contenedor para estructurar las etiquetas debajo de la imagen  -->
+                <div class="aside-box-foot">
+                    <div class="foot-col">
+                        <p>Orden de tacos</p>
+                        <a href="#">Ver Más</a>
+                    </div>
+                    <button type="button" class="btn-add img-efecto">+</button>
+                </div>
+            </div>
+
+            <!-- caja lateral 2 -->
+            <div class="aside-box">
+                <img src="static/images/orden-flautas.jpg" alt="orden de tacos">
+
+                <!-- Contenedor para estructurar las etiquetas debajo de la imagen  -->
+                <div class="aside-box-foot">
+                    <div class="foot-col">
+                        <p>Orden de tacos</p>
+                        <a href="#">Ver Más</a>
+                    </div>
+                    <button type="button" class="btn-add img-efecto">+</button>
+                </div>
+            </div>
+
+        </aside>
+    </div>
+    <!-- Javascripts -->
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
