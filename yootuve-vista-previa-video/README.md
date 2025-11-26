@@ -34,18 +34,6 @@ componentes visuales.
 
 ------------------------------------------------------------------------
 
-## 📁 Estructura del repositorio
-
-``` plaintext
-yootuve-vista-previa-video/
-├── index.html
-├── styles.css
-├── script.js
-└── screenshots/ (opcional para este README)
-```
-
-------------------------------------------------------------------------
-
 ## 🧠 ¿Cómo funciona?
 
 ### JS resumido (lógica principal)
