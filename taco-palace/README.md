@@ -15,11 +15,15 @@ Incluye:
 
 - 🌮 Catálogo de comida mexicana (tacos, burritos, quesadillas y más)
 - 🔥 Animaciones suaves y modernas
-- 📱 Diseño responsive para móviles
 - 🧅 Detalle de ingredientes con estilo
-- 🛒 Botones de compra decorativos (por ahora son de mentira… pero con estilo)
+- 🛒 Botones de compra que aumentan el carrito (por ahora son de mentira… pero con estilo xD)
 
 Perfecto para bootcampers, estudiantes o cualquier persona que quiera practicar frontend con algo sabroso.
+
+
+## 🖼️ Capturas
+
+![imagen-principal](./resources/capturas1.jpg)
 
 ---
 
